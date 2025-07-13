@@ -1,6 +1,5 @@
 # EternalBlue Exploitation Lab (MS17-010)
 
-![Security Lab](docs/images/lab_diagram.png) *(Optional diagram if you have one)*
 
 A controlled lab environment demonstrating the exploitation of Windows 7 via the EternalBlue vulnerability (MS17-010).
 
